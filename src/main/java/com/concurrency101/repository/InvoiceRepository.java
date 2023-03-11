@@ -9,5 +9,6 @@ import java.util.Optional;
 
 public interface InvoiceRepository extends JpaRepository<Invoice, Integer> {
     @Lock(LockModeType.OPTIMISTIC)
+    //  @Lock(LockModeType.PESSIMISTIC_WRITE) --other solution
     Optional<Invoice> findInvoiceByUuid(String uuid);
 }
