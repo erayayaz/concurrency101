@@ -1,4 +1,4 @@
-## Requirmements
+## Requirements
 - Java17
 - PostgreSQL
 
